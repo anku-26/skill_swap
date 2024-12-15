@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Swap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bidding.html">Bidding</a>
+        </nav>
+        <h1>Skill Swap</h1>
+    </header>
+    <main>
+        <section id="swap">
+            <h2>Find a Skill Swap Partner</h2>
+            <form id="swapForm" class="form-group">
+                <label for="know">What skill do you know?</label>
+                <input type="text" id="know" name="know" class="input-field">
+                <label for="learn">What skill do you want to learn?</label>
+                <input type="text" id="learn" name="learn" class="input-field">
+                <button type="button" onclick="searchSwap()" class="large-btn">Match</button>
+            </form>
+            <div id="loader" class="loader" style="display:none;"></div>
+            <div id="results" class="results"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+ 

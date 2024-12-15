@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+}
+
+.animated-title {
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+main {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+}
+
+.input-field {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.large-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    margin: 1em 0;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1.2em;
+}
+
+.large-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.results, #taskList {
+    margin-top: 2em;
+}
+
+.results p, .task p {
+    margin: 0.5em 0;
+}
+
+.about {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 2em;
+    color: #555;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.task {
+    background: #e9e9e9;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 5px;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #4CAF50;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 2em auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
